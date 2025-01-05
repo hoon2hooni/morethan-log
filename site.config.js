@@ -34,9 +34,8 @@ const CONFIG = {
     pageId: process.env.NOTION_PAGE_ID,
   },
 
-  //TODO: google search console 추가
   googleAnalytics: {
-    enable: false,
+    enable: true,
     config: {
       measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
     },
