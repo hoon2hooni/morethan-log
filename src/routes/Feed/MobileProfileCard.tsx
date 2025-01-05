@@ -55,7 +55,7 @@ const StyledWrapper = styled.div`
       gap: 0.5rem;
       align-items: center;
       > img {
-        border-radius: 0.3rem;
+        border-radius: 100%;
         flex-shrink: 0;
       }
       > .wrapper {
