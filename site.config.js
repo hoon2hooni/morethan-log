@@ -3,8 +3,8 @@ const CONFIG = {
   profile: {
     name: "Hooni",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "frontend developer",
-    bio: "FE dev nextjs, react, typescript, javascript love to talk, teach and think",
+    role: "Frontend Developer",
+    bio: "Frontend Developer nextjs, react, typescript, graphql, apollo, love to talk, teach and think surfing addicted 🏄🏻‍♂️",
     email: "sanghoon.engineer@gmail.com",
     linkedin: "han-sanghoon-6189b4143",
     github: "hoon2hooni",
@@ -20,13 +20,13 @@ const CONFIG = {
   blog: {
     title: "Hooni 블로그",
     description: "Hooni 개발 블로그 입니다",
-    scheme: "dark", // 'light' | 'dark' | 'system'
+    scheme: "system", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
   link: "hooni.me",
   since: 2022, // If leave this empty, current year will be used.
-  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  lang: ["en-US", "ko-KR"], // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
 
   // notion configuration (required)
@@ -34,19 +34,21 @@ const CONFIG = {
     pageId: process.env.NOTION_PAGE_ID,
   },
 
-  // plugin configuration (optional)
+  //TODO: google search console 추가
   googleAnalytics: {
     enable: false,
     config: {
       measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
     },
   },
+  //TODO: google search console 추가
   googleSearchConsole: {
     enable: false,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
   },
+  //TODO: naver search advisor 추가
   naverSearchAdvisor: {
     enable: false,
     config: {
