@@ -41,9 +41,8 @@ const CONFIG = {
       measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
     },
   },
-  //TODO: google search console 추가
   googleSearchConsole: {
-    enable: false,
+    enable: true,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
