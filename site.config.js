@@ -20,6 +20,7 @@ const CONFIG = {
   blog: {
     title: "Hooni 블로그",
     description: "Hooni 개발 블로그 입니다",
+    scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
